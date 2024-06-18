@@ -17,9 +17,8 @@ socialIcons = [
     {name = "github", url = "https://github.com/"},    
     {name = "instagram", url = "https://instagram.com/"},    
     {name = "tiktok", url = "https://tiktok.com/"},    
-    {name = "linkedin", url = "https://linkedin.com/"},    
 ] 
 
 [params.twitter]
-	enable = false 
+	enable = true 
 	username = "mansoorbarri"

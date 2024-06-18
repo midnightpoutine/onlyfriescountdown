@@ -1,0 +1,24 @@
+baseURL = "https://cshugo.mansoorbarri.com"
+languageCode = 'en-us'
+theme = "coming-soon"
+
+[params]
+    title = "OnlyFries"
+    description = "For event details check out our Facebook link."
+    favicon = "favicon.ico"
+    message = "The Sauciest Fundraiser of the Year"
+    release = "July 6, 2024"
+    background = ""
+
+socialIcons = [
+    {name = "email", url = "admin@midnightpoutine.org"},
+    {name = "twitter", url = "https://x.com/midnightpoutine"},
+    {name = "facebook", url = "https://www.facebook.com/events/1160371371627638"},
+    {name = "github", url = "https://github.com/midnightpoutine/onlyfries"},
+    {name = "instagram", url = "https://www.instagram.com/midnightpoutineqc/"}
+
+] 
+
+[params.twitter]
+	enable = false
+	username = "midnightpoutine"

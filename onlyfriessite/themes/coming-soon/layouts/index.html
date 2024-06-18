@@ -17,7 +17,7 @@
             {{ if .Site.Params.title }}
                 <p>{{ .Site.Params.title }}</p>
             {{ else }}
-                <p>Coming Soon HUGO</p>
+                <p>Coming Soon</p>
             {{ end }}
         </div>
         <div class="middle">
@@ -26,6 +26,15 @@
             {{ else }}
                 <h1>COMING SOON</h1>
             {{ end }}
+            <br />
+            <div class="banner">
+                <a href="https://thepointofsale.com/tickets/onlyfries?fbclid=IwZXh0bgNhZW0CMTAAAR1QjV8npGV0MITkcBA78NNFWf2FycocJvIPnDwxaYws2-xRIQJ9NDBa-LQ_aem_YRZOrpkJaFw20ZqQho3Vdw" target="_blank">
+                    <img src="{{ $.Site.BaseURL }}images/OnlyFries.png" alt="OnlyFries Banner" />
+                </a>
+
+                <div class="banner-text">
+                </div>
+            </div>
             <hr>
             <p id="demo"></p>
             <div id="countdown" data-release="{{ .Site.Params.release }}"></div>
@@ -44,7 +53,7 @@
                     {{ $iconName := .name }}
                     <a href="{{ if eq $iconName "email" }}mailto:{{ .url }} {{ else }}{{ .url }}{{ end }}"
                        {{ if .rel }}rel="{{ .rel }}"{{ end }}>
-                        <img src="{{ $.Site.BaseURL }}/svg/icons/{{ .name }}.svg" alt="test" />
+                        <img src="{{ $.Site.BaseURL }}svg/icons/{{ .name }}.svg" alt="test" />
                     </a>
                 </li>
                 {{ end }}

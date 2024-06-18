@@ -15,9 +15,9 @@ position: relative;
 /* Add a white text color to all elements inside the .bgimg container */
 color: white;
 /* Add a font */
-font-family: "Courier New", Courier, monospace;
-/* Set the font-size to 25 pixels */
-font-size: 25px;
+font-family: "Roboto", Roboto, monospace;
+/* Set the font-size to 18 pixels */
+font-size: 18px;
 }
 
 .bgimg video {
@@ -28,6 +28,38 @@ display: block; /* Remove any extra spacing */
 position: absolute; /* Position the video absolutely within the .bgimg container */
 }
 
+.banner {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.banner a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.banner img {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 20px; /* Apply rounded edges */
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
 
 /* Position text in the top-left corner */
 .topleft {
@@ -58,6 +90,9 @@ text-align: center;
 @media screen AND (max-width:600px) {
   .middle h1{
     font-size: 20px;
+  }
+  .banner-text {
+    font-size: 1.5em;
   }
   #demo{
     font-size: 20px;
