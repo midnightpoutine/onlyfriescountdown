@@ -29,7 +29,7 @@
             <br />
             <div class="banner">
                 <a href="https://thepointofsale.com/tickets/onlyfries?fbclid=IwZXh0bgNhZW0CMTAAAR1QjV8npGV0MITkcBA78NNFWf2FycocJvIPnDwxaYws2-xRIQJ9NDBa-LQ_aem_YRZOrpkJaFw20ZqQho3Vdw" target="_blank">
-                    <img src="{{ $.Site.BaseURL }}images/OnlyFries.png" alt="OnlyFries Banner" />
+                    <img src="/images/OnlyFries.png" alt="OnlyFries Banner" />
                 </a>
 
                 <div class="banner-text">
@@ -53,7 +53,7 @@
                     {{ $iconName := .name }}
                     <a href="{{ if eq $iconName "email" }}mailto:{{ .url }} {{ else }}{{ .url }}{{ end }}"
                        {{ if .rel }}rel="{{ .rel }}"{{ end }}>
-                        <img src="{{ $.Site.BaseURL }}svg/icons/{{ .name }}.svg" alt="test" />
+                        <img src="/svg/icons/{{ .name }}.svg" alt="{{ .name }}" />
                     </a>
                 </li>
                 {{ end }}

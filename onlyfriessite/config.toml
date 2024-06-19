@@ -1,6 +1,7 @@
 baseURL = "https://cshugo.mansoorbarri.com"
 languageCode = 'en-us'
 theme = "coming-soon"
+relativeURLs = true
 
 [params]
     title = "OnlyFries"
