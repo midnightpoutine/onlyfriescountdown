@@ -5,22 +5,25 @@ body {
     background-color: #f0f0f0;
 }
 
-header {
-    background-color: #4267B2;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-h1 {
-    margin: 0;
-}
-
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    background-color: #4267B2;
+}
+
+h1 {
+    margin: 0;
 }
 
 .item {
@@ -32,6 +35,25 @@ main {
     width: 200px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.item > p:first-child {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.logo {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+
 
 img {
     max-width: 100%;
@@ -50,29 +72,4 @@ iframe {
 
 .details p {
     margin: 0.5em 0;
-}
-
-.bgimg {
-    /* Full-screen */
-    height: 100vh; /* Use viewport height for full-screen height */
-    /* Center the background image */
-    background-position: center;
-    /* Scale and zoom in the image */
-    background-size: cover;
-    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-    position: relative;
-    /* Add a white text color to all elements inside the .bgimg container */
-    color: white;
-    /* Add a font */
-    font-family: "Roboto", Roboto, monospace;
-    /* Set the font-size to 18 pixels */
-    font-size: 18px;
-}
-
-.bgimg video {
-    width: 100%;
-    height: 100%; /* Make the video fill the entire .bgimg container */
-    object-fit: cover; /* Make the video cover the container without stretching */
-    display: block; /* Remove any extra spacing */
-    position: absolute; /* Position the video absolutely within the .bgimg container */
 }

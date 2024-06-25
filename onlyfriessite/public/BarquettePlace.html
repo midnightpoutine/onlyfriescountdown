@@ -2,48 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Barquetteplace</title>
-</head>
-<body>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barquetteplace</title>
     <link rel="stylesheet" href="/css/fbstyle.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl7+8mO5j5MkNPS08VeZlB5FjFl8t8yjB6zx1+k1t8uY9j6z9t4G1V4C5sfX5ZGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/i18next@21.6.5/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.4/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://unpkg.com/jquery-i18next@1.2.0/dist/umd/jquery-i18next.min.js"></script>
 </head>
+
 <body>
 <header>
-    <h1>Barquetteplace</h1>
+    <div class="header-content">
+        <i class="fas fa-home logo"> <img src="/images/barquetteplace/marketplace.png" alt="logo"></i>
+        <h1 data-i18n="siteTitle">Barquetteplace</h1>
+    </div>
+    <select id="languageSwitcher">
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+    </select>
 </header>
 <main>
     <div class="item">
-        <p>Item #1 </p>
+        <p data-i18n="item1">Item #1 </p>
         <img src="/images/barquetteplace/item1.png" alt="Item 1">
         <div class="details">
-            <p>Création originale multimédia</p>
-            <p>Starting Price: $60</p>
+            <p data-i18n="item1Description"></p>
+            <p data-i18n="item1StartingPrice"></p>
         </div>
     </div>
     <div class="item">
-        <p>Item #2 </p>
+        <p data-i18n="item2">Item #2 </p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/EhKyrBxjw7I?si=TsDyiAuPNz8xwzer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="details">
-            <p>Old School Midnight Poutine</p>
-            <p>Price: $ infinite</p>
+            <p data-i18n="item2Description">Old School Midnight Poutine</p>
+            <p data-i18n="item2StartingPrice">Price: $ infinite</p>
         </div>
     </div>
-<!--    <div class="bgimg">-->
-<!--        <video autoplay muted loop poster="poster.jpg">           -->
-<!--            <source src="bg.mp4" type="video/mp4">-->
-<!--            -->
-<!--        </video>-->
-<!--      -->
-<!--        &lt;!&ndash; Add more items as needed &ndash;&gt;-->
-<!--    </div>>-->
+    <div class="item">
+        <p data-i18n="item3">Item #3 </p>
+        <img src="/images/barquetteplace/item1.png" alt="Item 1">
+        <div class="details">
+            <p data-i18n="item3Description"></p>
+            <p data-i18n="item3StartingPrice"></p>
+        </div>
+    </div>
+    <div class="item">
+        <p data-i18n="item4">Item #4 </p>
+        <img src="/images/barquetteplace/item1.png" alt="Item 1">
+        <div class="details">
+            <p data-i18n="item4Description"></p>
+            <p data-i18n="item4StartingPrice"></p>
+        </div>
+    </div>
+    <div class="item">
+        <p data-i18n="item5">Item #5 </p>
+        <img src="/images/barquetteplace/item1.png" alt="Item 1">
+        <div class="details">
+            <p data-i18n="item5Description"></p>
+            <p data-i18n="item5StartingPrice"></p>
+        </div>
+    </div>
 </main>
 </body>
+<div> Icons made by <a href="https://www.flaticon.com/authors/iconjam" title="Iconjam"> Iconjam </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
 </html>
+
+<script>
+    const resources = {
+        en: {
+            translation: {
+                "siteTitle": "Barquetteplace",
+                "item1": "Item #1 MP Sticker",
+                "item1Description": "Original Multimedia Creation",
+                "item1StartingPrice": "Starting Price: $60",
+                "item2": "Hypnosis Seance",
+                "item2Description": "Discover access to your Consciousness to relieve a problem or stimulate a force. While being in control of your choices you will be the master and artist of your life. (Session in French only)",
+                "item2StartingPrice": "Starting Price: $65",
+                "item3": "Item #2 MP video",
+                "item3Description": "Old School Midnight Poutine",
+                "item3StartingPrice": "Price: $ infinite"
+            }
+        },
+        fr: {
+            translation: {
+                "siteTitle": "Barquetteplace",
+                "item1": "Article #1 Sticker MP ",
+                "item1Description": "Création originale multimédia",
+                "item1StartingPrice": "Prix de départ: $60 ",
+                "item2": "Séance d'hypnose humaniste",
+                "item2Description": "Découvrez l'accès à votre Consience pour soulager un souçi ou stimuler une force. Tout en étant en contrôle de vos choix vous serez le maître et l'artiste de votre vie. (Séance en français seulement)",
+                "item2StartingPrice": "Prix de départ: $65",
+                "item3": "Item #2 MP video",
+                "item3Description": "Old School Midnight Poutine",
+                "item3StartingPrice": "Price: $ infinite"
+            }
+        }
+    };
+
+    i18next.use(i18nextBrowserLanguageDetector).init({
+        resources,
+        fallbackLng: 'fr',
+        debug: true
+    }, function(err, t) {
+        if (err) return console.error(err);
+
+        updateContent();
+    });
+
+    function updateContent() {
+        document.querySelector('title').innerText = i18next.t('siteTitle');
+        document.querySelector('h1').innerText = i18next.t('siteTitle');
+
+        document.querySelectorAll('[data-i18n]').forEach(function(element) {
+            const key = element.getAttribute('data-i18n');
+            element.innerText = i18next.t(key);
+        });
+
+        // document.querySelectorAll('.item p')[0].innerText = i18next.t('item1');
+        // document.querySelectorAll('.item p')[1].innerText = i18next.t('item1StartingPrice');
+        // document.querySelectorAll('.item p')[2].innerText = i18next.t('item2');
+        //
+        //
+        // document.querySelectorAll('.item .details p')[0].innerText = i18next.t('item1Description');
+        // document.querySelectorAll('.item .details p')[1].innerText = i18next.t('item2StartingPrice');
+        // document.querySelectorAll('.item .details p')[2].innerText = i18next.t('item2Description');
+    }
+
+    document.getElementById('languageSwitcher').addEventListener('change', function() {
+        const selectedLanguage = this.value;
+        i18next.changeLanguage(selectedLanguage, updateContent);
+    });
+</script>
