@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barquetteplace</title>
+    <title>Barquetteplace </title>
     <link rel="stylesheet" href="/css/fbstyle.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl7+8mO5j5MkNPS08VeZlB5FjFl8t8yjB6zx1+k1t8uY9j6z9t4G1V4C5sfX5ZGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/i18next@21.6.5/dist/umd/i18next.min.js"></script>
@@ -23,9 +23,10 @@
     </select>
 </header>
 <main>
+    <br/>
     <div class="item">
-        <p data-i18n="item1">Item #1 </p>
-        <img src="/images/barquetteplace/item1.png" alt="Item 1">
+        <p data-i18n="item1">Item #1 </p>"
+        <img src="/images/barquetteplace/Item_01_toile_multimedia.jpg" alt="Item 1" onclick="openModal(this.src)">
         <div class="details">
             <p data-i18n="item1Description"></p>
             <p data-i18n="item1StartingPrice"></p>
@@ -33,15 +34,16 @@
     </div>
     <div class="item">
         <p data-i18n="item2">Item #2 </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/EhKyrBxjw7I?si=TsDyiAuPNz8xwzer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="images/barquetteplace/item02_Hypnose_images.jfif" alt="Item 2" onclick="openModal(this.src)">
+
         <div class="details">
-            <p data-i18n="item2Description">Old School Midnight Poutine</p>
-            <p data-i18n="item2StartingPrice">Price: $ infinite</p>
+            <p data-i18n="item2Description"></p>
+            <p data-i18n="item2StartingPrice"></p>
         </div>
     </div>
     <div class="item">
         <p data-i18n="item3">Item #3 </p>
-        <img src="/images/barquetteplace/item1.png" alt="Item 1">
+        <img src="images/barquetteplace/item_03_Tableau_bleu_plaisirs.jpg" alt="Item 3" onclick="openModal(this.src)">
         <div class="details">
             <p data-i18n="item3Description"></p>
             <p data-i18n="item3StartingPrice"></p>
@@ -49,7 +51,7 @@
     </div>
     <div class="item">
         <p data-i18n="item4">Item #4 </p>
-        <img src="/images/barquetteplace/item1.png" alt="Item 1">
+        <img src="/images/barquetteplace/Item_04_fork_Midnight_Poutine.png" alt="Item 4" onclick="openModal(this.src)">
         <div class="details">
             <p data-i18n="item4Description"></p>
             <p data-i18n="item4StartingPrice"></p>
@@ -57,15 +59,114 @@
     </div>
     <div class="item">
         <p data-i18n="item5">Item #5 </p>
-        <img src="/images/barquetteplace/item1.png" alt="Item 1">
+        <img src="/images/barquetteplace/Item_05_stickers.jpg" alt="Item 5" onclick="openModal(this.src)">
         <div class="details">
             <p data-i18n="item5Description"></p>
             <p data-i18n="item5StartingPrice"></p>
         </div>
     </div>
+    <div class="item">
+        <p data-i18n="item6">Item #6 </p>
+        <img src="/images/barquetteplace/Item_06_patch.jpg" alt="Item 6" onclick="openModal(this.src)">
+        <div class="details">
+            <p data-i18n="item6Description"></p>
+            <p data-i18n="item6StartingPrice"></p>
+        </div>
+    </div>
+    <div class="item">
+        <p data-i18n="item7">Item # 7</p>
+        <img src="/images/barquetteplace/Item_07_lampe_lune-2.jpg" alt="Item 7" onclick="openModal(this.src)">
+        <div class="details">
+            <p data-i18n="item7Description"></p>
+            <p data-i18n="item7StartingPrice"></p>
+        </div>
+    </div>
+    <div class="item">
+        <p data-i18n="item8">Item #8 </p>
+        <img src="/images/barquetteplace/Item_08_Clavier_images.jfif" alt="Item 8" onclick="openModal(this.src)">
+        <div class="details">
+            <p data-i18n="item8Description"></p>
+            <p data-i18n="item8StartingPrice"></p>
+        </div>
+    </div>
+    <div class="item">
+        <p data-i18n="item9">Item #9 </p>
+        <img src="/images/barquetteplace/Item_09_Coffre_secret_bijoux.jpg" alt="Item 9" onclick="openModal(this.src)"
+        <div class="details">
+            <p data-i18n="item9Description"></p>
+            <p data-i18n="item9StartingPrice"></p>
+        </div>
+    </div>
+    <div class="item">
+        <p data-i18n="item10">Item #10 </p>
+        <img src="/images/barquetteplace/Item_10_naturopathie.jpg" alt="Item 10" onclick="openModal(this.src)">
+        <div class="details">
+            <p data-i18n="item10Description"></p>
+            <p data-i18n="item10StartingPrice"></p>
+        </div>
+    </div>
+    <div class="item">
+        <p data-i18n="item11">Item #11 </p>
+        <img src="/images/barquetteplace/item1.png" alt="Item 11" onclick="openModal(this.src)">
+        <div class="details">
+            <p data-i18n="item11Description"></p>
+            <p data-i18n="item11StartingPrice"></p>
+        </div>
+    </div>
+    <div class="item">
+        <p data-i18n="item12">Item #12 </p>
+        <img src="/images/barquetteplace/item1.png" alt="Item 12" onclick="openModal(this.src)">
+        <div class="details">
+            <p data-i18n="item12Description"></p>
+            <p data-i18n="item12StartingPrice"></p>
+        </div>
+    </div>
+    <div class="item">
+        <p data-i18n="item13">Item #13 </p>
+        <img src="/images/barquetteplace/item1.png" alt="Item 13" onclick="openModal(this.src)">
+        <div class="details">
+            <p data-i18n="item13Description"></p>
+            <p data-i18n="item13StartingPrice"></p>
+        </div>
+    </div>
+    <div class="item">
+        <p data-i18n="item14">Item #14 </p>
+        <img src="/images/barquetteplace/item1.png" alt="Item 14" onclick="openModal(this.src)">
+        <div class="details">
+            <p data-i18n="item14Description"></p>
+            <p data-i18n="item14StartingPrice"></p>
+        </div>
+    </div>
+
+<!--  Video example  -->
+<!--    <div class="item">-->
+<!--        <p data-i18n="item25">Item #5 </p>-->
+<!--        <iframe width="560" height="315" src="https://www.youtube.com/embed/EhKyrBxjw7I?si=TsDyiAuPNz8xwzer" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+<!--        <div class="details">-->
+<!--            <p data-i18n="item25Description"></p>-->
+<!--            <p data-i18n="item25StartingPrice"></p>-->
+<!--        </div>-->
+<!--    </div>-->
+
 </main>
+
+<!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Zoomed Image">
+        </div>
+    </div>
+
+
 </body>
-<div> Icons made by <a href="https://www.flaticon.com/authors/iconjam" title="Iconjam"> Iconjam </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>
+<div class="details">
+    <p data-i18n="siteTutorial"></p>
+</div>
+<hr/>
+<div class="details">
+    <p>Icons made by <a href="https://www.flaticon.com/authors/iconjam" title="Iconjam"> Iconjam </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></p>
+</div>
 </html>
 
 <script>
@@ -73,29 +174,43 @@
         en: {
             translation: {
                 "siteTitle": "Barquetteplace",
-                "item1": "Item #1 MP Sticker",
+                "siteTutorial": "The auction will be silent, you will be able to enter your info and place your bet in a piece of paper by the Auction picture board throughout the whole day.",
+                "item1": "Table - multi media and Swarovski",
                 "item1Description": "Original Multimedia Creation",
                 "item1StartingPrice": "Starting Price: $60",
                 "item2": "Hypnosis Seance",
                 "item2Description": "Discover access to your Consciousness to relieve a problem or stimulate a force. While being in control of your choices you will be the master and artist of your life. (Session in French only)",
-                "item2StartingPrice": "Starting Price: $65",
-                "item3": "Item #2 MP video",
-                "item3Description": "Old School Midnight Poutine",
-                "item3StartingPrice": "Price: $ infinite"
+                "item2StartingPrice": "Starting Price: $55",
+                "item3": "Bleu Plaisirs - Painting",
+                "item3Description": "95 cm X 88 cm",
+                "item3StartingPrice": "Starting Price: $25",
+                "item4": "Midnight Poutine Fork",
+                "item4Description": "95 cm X 88 cm",
+                "item4StartingPrice": "Starting Price: $20",
+                "item5": "MP FAN sticker pack",
+                "item5Description": "Stickers from different editions of MP",
+                "item5StartingPrice": "Starting Price: $invaluable!",
             }
         },
         fr: {
             translation: {
                 "siteTitle": "Barquetteplace",
-                "item1": "Article #1 Sticker MP ",
+                "siteTutorial": "L'enchère sera silencieuse, vous pourrez saisir vos informations et placer votre pari sur un morceau de papier près du tableau d'images de l'enchère tout au long de la journée.",
+                "item1": "Tableau - multi média et Swarovski",
                 "item1Description": "Création originale multimédia",
                 "item1StartingPrice": "Prix de départ: $60 ",
                 "item2": "Séance d'hypnose humaniste",
                 "item2Description": "Découvrez l'accès à votre Consience pour soulager un souçi ou stimuler une force. Tout en étant en contrôle de vos choix vous serez le maître et l'artiste de votre vie. (Séance en français seulement)",
-                "item2StartingPrice": "Prix de départ: $65",
-                "item3": "Item #2 MP video",
-                "item3Description": "Old School Midnight Poutine",
-                "item3StartingPrice": "Price: $ infinite"
+                "item2StartingPrice": "Prix de départ: $55",
+                "item3": "Tableau - Bleu Plaisirs",
+                "item3Description": "95 cm X 88 cm",
+                "item3StartingPrice": "Prix de départ: $25",
+                "item4": "Fourchette de Midnight Poutine ",
+                "item4Description": "Copper fork engraved with Midnight Poutine",
+                "item4StartingPrice": "Prix de départ: $20",
+                "item5": "Pack de stickers FAN de MP",
+                "item5Description": "Autocollants des différentes éditions de MP",
+                "item5StartingPrice": "Prix de départ: $inestimable!",
             }
         }
     };
@@ -116,21 +231,26 @@
 
         document.querySelectorAll('[data-i18n]').forEach(function(element) {
             const key = element.getAttribute('data-i18n');
-            element.innerText = i18next.t(key);
-        });
+            let text = i18next.t(key);
+            // Wrap dollar amounts in <strong> tags
+            text = text.replace(/(\$\d+(\.\d{1,2})?)/g, '<strong>$1</strong>');
 
-        // document.querySelectorAll('.item p')[0].innerText = i18next.t('item1');
-        // document.querySelectorAll('.item p')[1].innerText = i18next.t('item1StartingPrice');
-        // document.querySelectorAll('.item p')[2].innerText = i18next.t('item2');
-        //
-        //
-        // document.querySelectorAll('.item .details p')[0].innerText = i18next.t('item1Description');
-        // document.querySelectorAll('.item .details p')[1].innerText = i18next.t('item2StartingPrice');
-        // document.querySelectorAll('.item .details p')[2].innerText = i18next.t('item2Description');
+            element.innerHTML = text;
+        });
     }
 
     document.getElementById('languageSwitcher').addEventListener('change', function() {
         const selectedLanguage = this.value;
         i18next.changeLanguage(selectedLanguage, updateContent);
     });
+
+    // Modal Image Functionality
+    function openModal(src) {
+        document.getElementById('myModal').style.display = "block";
+        document.getElementById('modalImage').src = src;
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+    }
 </script>
