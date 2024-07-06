@@ -8,7 +8,7 @@ relativeURLs = true
     description = "For event details check out our Facebook link."
     favicon = "favicon.ico"
     message = "The Sauciest Fundraiser of the Year"
-    release = "July 6, 2024"
+    release = "July 7, 2024"
     background = ""
 
 socialIcons = [
